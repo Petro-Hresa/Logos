@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Control Work First</title>
+	<link rel="stylesheet" href="controlWork.css">
+</head>
+<body>
+
+<div class="wrapper__general_content">
+	<!--=========================Box Upper==============================-->
+	<div id="box__upper" class="boxes__upper-lower_creation-table">
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+
+	<!--====================Button Edit and Style=======================-->
+	<div class="wrapper-btn">
+		<button id="btn-edit" class="button__general">edit</button>
+		<button id="btn-style" class="button__general">style</button>
+	</div>
+
+	<!--========================Box Lower================================-->
+	<div id="box__lower" class=" boxes__upper-lower_creation-table">
+
+		<!-----------------Content Button Edit------------------------>
+		<div class="wrap__content_btn-edit" style="display: none">
+
+			<textarea id="textarea"></textarea>
+
+			<div class="wrapper-btn">
+				<button id="btn-add" class="button__general">add</button>
+				<button id="btn-save" class="button__general">save</button>
+			</div>
+
+		</div>
+
+		<!-----------------Content Button  Style---------------------->
+		<div class="wrap__content_btn-style">
+			<!-----------------Left box Button Style-----------------c---->
+			<div class="wrapper__left-box_btn-style">
+				<!-- Font Size -->
+				<div class="wrapper__font-size">
+
+					<p class="title_style">Font size:</p>
+
+					<label class="radio_label">
+						<input type="radio" name="size" class="radio_checked" value="12">
+						<span class="radio_box"><span class="radio_checked"></span></span>12px
+					</label>
+
+					<label class="radio_label">
+						<input type="radio" name="size" class="radio_checked" value="14">
+						<span class="radio_box"><span class="radio_checked"></span></span>14px
+					</label>
+
+					<label class="radio_label">
+						<input type="radio" name="size" class="radio_checked" value="16" checked>
+						<span class="radio_box"><span class="radio_checked"></span></span>16px
+					</label>
+
+					<label class="radio_label">
+						<input type="radio" name="size" class="radio_checked" value="18">
+						<span class="radio_box"><span class="radio_checked"></span></span>18px
+					</label>
+
+					<label class="radio_label">
+						<input type="radio" name="size" class="radio_checked" value="20">
+						<span class="radio_box"><span class="radio_checked"></span></span>20px
+					</label>
+
+				</div>
+
+				<!--Font Family-->
+				<div class="wrapper__font-family">
+					<p class="title_style">Font family:</p>
+					<select name="Choose_font" id="select__font_family">
+						<option disabled selected>Choose option</option>
+						<option value="sans-serif">sans-serif</option>
+						<option value="cursive">cursive</option>
+						<option value="fantasy">fantasy</option>
+						<option value="monospace">monospace</option>
+					</select>
+				</div>
+
+				<!--Colors-->
+				<div class="wrapper__colors">
+					<p class="title_style">Colors:</p>
+					<button id="btn_colors-text" class="button__general">Color of Text</button>
+					<button id="btn_background-color" class="button__general">Background color</button>
+				</div>
+
+				<!--Style-->
+				<div class="wrapper__style">
+					<p class="title_style">Style:</p>
+					<div class="inner__checkbox">
+						<input id="bold_text" type="checkbox">
+						<label for="bold_text" class="box_check"></label> Bold text
+						<input id="cursive_text" type="checkbox">
+						<label for="cursive_text" style="margin-left: 10px" class="box_check"></label>Cursive text
+					</div>
+				</div>
+
+			</div>
+			<!---------------------Right box Button Style--------------------->
+			<div class="wrapper__right-box_btn-style">
+				<div class="wrap__colors"></div>
+				<div class="wrap__background"></div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!--================= Content Button Add  Creation table and list===================-->
+<div id="creation__table_list" class="boxes__upper-lower_creation-table">
+
+	<!---------------	Choose Table or List---------------->
+	<p class="paragraph__creation__table_list">Choose what you want:</p>
+	<div class="wrap__choose_table-or-list">
+		<label class="radio_label">
+			<input type="radio" name="size" id="table" class="radio_checked">
+			<span class="radio_box"><span class="radio_checked"></span></span>table
+		</label>
+
+		<label class="radio_label">
+			<input type="radio" name="size" id="list" class="radio_checked">
+			<span class="radio_box"><span class="radio_checked"></span></span>list
+		</label>
+	</div>
+
+	<!------------	Creation Table------------------>
+	<div class="wrapper__table">
+		<!--	Form table-->
+		<form name="form__table">
+
+			<div class="inner__input">
+				<p>Count TR:</p><input type="text" class="input__table" placeholder="Count TR">
+			</div>
+
+			<div class="inner__input">
+				<p>Count TD:</p><input type="text" class="input__table" placeholder="Count TD">
+			</div>
+
+			<p class="paragraph__style-table">Add style to your table:</p>
+
+			<div class="inner__input">
+				<p>Width fo TD:</p>  <input type="text" class="input__table" placeholder="Width fo TD:">
+			</div>
+
+			<div class="inner__input">
+				<p>Height of TD:</p><input type="text" class="input__table" placeholder="Height of TD:">
+			</div>
+
+			<div class="inner__input">
+				<p>Width of border:</p><input type="text" class="input__width-border input__table" placeholder="Width:">
+
+				<p>Type of border</p>
+				<select name="selectTypeBorder" class="input__width-border input__table">
+					<option value="dotted">dotted</option>
+					<option value="dashed">dashed</option>
+					<option value="solid" selected>solid</option>
+					<option value="double">double</option>
+					<option value="groove">groove</option>
+				</select>
+
+				<p>Color of border</p>
+				<select name="selectColorBorder" class="input__width-border input__table">
+					<option value="black" selected>black</option>
+					<option value="red">red</option>
+					<option value="blue">blue</option>
+					<option value="green">green</option>
+				</select>
+			</div>
+		</form>
+		<!--	Button table-->
+		<button id="btn_create-table" class="button__general">Create table</button>
+		<!--table-->
+		<table class="table"></table>
+
+	</div>
+	<!--------------	Creation list-----------------	-->
+	<div class="wrap__list">
+
+		<div class="inner__input">
+			<p>Count Li:</p><input type="text" id="count__li" class="input__table" placeholder="Count Li:">
+		</div>
+
+		<div class="inner__input">
+			<p>Type of marks:</p>
+			<select id="selectTypeList" class=" input__table">
+				<option value="circle" selected>circle</option>
+				<option value="disc">disc</option>
+				<option value="square">square</option>
+			</select>
+		</div>
+
+		<button id="btn_create-list" class="button__general">Create list</button>
+		<div id="typeList"></div>
+	</div>
+</div>
+
+<script src="controlWork.js"></script>
+</body>
+</html>
+

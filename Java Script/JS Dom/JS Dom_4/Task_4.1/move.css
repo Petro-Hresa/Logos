@@ -1,0 +1,30 @@
+body{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+}
+.wrapper{
+	width: 70%;
+}
+.input-text__style{
+	width: 30%;
+	padding: 5px;
+	outline: none;
+	font-size:20px;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: 1px solid rgb(220, 220, 220);
+	transition: box-shadow.3s;
+}
+/*Button*/
+.btn{
+	padding: 5px;
+	color: white;
+	background:LimeGreen;
+
+}
+
+

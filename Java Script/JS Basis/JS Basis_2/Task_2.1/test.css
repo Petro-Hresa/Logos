@@ -1,0 +1,21 @@
+.level{
+	width: 400px;
+	height: 200px;
+	color:black;
+	font-size: 18px;
+	border-radius:10px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	flex-direction:column;
+}
+.level-1{
+	background: #DC143C;
+}
+.level-2{
+	background:#FFD700;
+}
+
+.level-3{
+	background:#ADFF2F;
+}

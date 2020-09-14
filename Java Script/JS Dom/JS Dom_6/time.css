@@ -1,0 +1,162 @@
+/*General Style*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+/*Fonts*/
+@font-face {
+	font-family: 'Conv_digital-7';
+	src: url('fonts/digital-7.eot');
+	src: local('☺'), url('fonts/digital-7.woff') format('woff'), url('fonts/digital-7.ttf') format('truetype'), url('fonts/digital-7.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_digital-7-mono-italic-';
+	src: url('fonts/digital-7-mono-italic-.eot');
+	src: local('☺'), url('fonts/digital-7-mono-italic-.woff') format('woff'), url('fonts/digital-7-mono-italic-.ttf') format('truetype'), url('fonts/digital-7-mono-italic-.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Body*/
+body{
+	color:dodgerblue;
+	background-color: black;
+	font-family: 'Conv_digital-7';
+}
+
+/*============General Style for boxes UCL============*/
+/*Boxes Upper Center Lower*/
+.wrapper__boxes-UCL{
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	border: 1px solid grey;
+	background-color: #010317;
+}
+
+/*Style Boxes Left Right*/
+.style-LR{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*Button*/
+.btn-all{
+	outline: none;
+	margin: 30px 0;
+	font-size: 16px;
+	color:dodgerblue;
+	padding: 5px 15px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	box-shadow: 0 0 2px grey;
+	background-color:#010317;
+	transition:box-shadow .1s;
+	font-family: 'Conv_digital-7';
+}
+.btn-all:active{
+	box-shadow:  0 0 5px ghostwhite;
+}
+
+/*==================Box Upper======================*/
+#box__upper{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*-----Box Upper Date-----*/
+#date{
+	font-size: 30px;
+	font-family: 'Conv_digital-7-mono-italic-';
+}
+
+/*-----Box Upper Time------*/
+#time{
+	display: flex;
+	font-size: 90px;
+}
+
+/*General style time*/
+.box__time{
+	width: 85px;
+	display: flex;
+	justify-content: center;
+}
+/*General style Two Dots*/
+.two-dots{
+	width: 10px;
+	display: flex;
+	margin: 0 10px;
+	justify-content: center;
+}
+
+/*====================Box Center======================*/
+/*-------------Center Box-L------------*/
+/*Stopwatch*/
+.stopwatch{
+	margin: 20px;
+	display: flex;
+	font-size:5.4vh;
+}
+.stopwatch__items{
+	width: 50px;
+}
+
+/*-------------Center Box-R------------*/
+#save-stopwatch{
+	width: 50%;
+	height: 150px;
+	display: flex;
+	font-size: 25px;
+	overflow: hidden;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 0 5px grey;
+	border: 1px solid #3f3f3f;
+	background-color: #010b1d;
+}
+/*================= Box Lower=======================*/
+/*------------lower Box-R-----------*/
+.style__timer_minutes{
+	width: 77px;
+	display: flex;
+	font-size: 80px;
+	justify-content: center;
+}
+
+/*Minutes Button*/
+#plus__btn,
+#minus__btn {
+	margin-top:10px;
+	font-size: 20px;
+	padding: 5px 10px;
+}
+
+/*------------lower Box-L-----------*/
+/*Timer*/
+#inner__timer{
+	display: flex;
+}
+#timer__two_dots{
+	font-size: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+

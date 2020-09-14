@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Puzzle</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			display: flex;
+			justify-content: center;
+		}
+
+		.box{
+			width: 384px;
+			height: 384px;
+			margin: 100px;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: flex-start;
+			background-color: #d7d7d7;
+			box-shadow: 0 0 5px black;
+
+		}
+
+		img{
+			margin: 0;
+			width: 96px;
+			height: 97px;
+		}
+	</style>
+</head>
+<body>
+<div id="box__left" class="box">
+	<img src="img/image_part_001.jpg" alt="1">
+	<img src="img/image_part_002.jpg" alt="2">
+	<img src="img/image_part_003.jpg" alt="3">
+	<img src="img/image_part_004.jpg" alt="4">
+	<img src="img/image_part_005.jpg" alt="5">
+	<img src="img/image_part_006.jpg" alt="6">
+	<img src="img/image_part_007.jpg" alt="7">
+	<img src="img/image_part_008.jpg" alt="8">
+	<img src="img/image_part_009.jpg" alt="9">
+	<img src="img/image_part_010.jpg" alt="10">
+	<img src="img/image_part_011.jpg" alt="11">
+	<img src="img/image_part_012.jpg" alt="12">
+	<img src="img/image_part_013.jpg" alt="13">
+	<img src="img/image_part_014.jpg" alt="14">
+	<img src="img/image_part_015.jpg" alt="15">
+	<img src="img/image_part_016.jpg" alt="16">
+</div>
+
+<div id="box__right"	 class="box"></div>
+
+<script type="text/javascript">
+  $(function(){
+
+    $('.box').sortable({
+      connectWith:'.box'
+    })
+
+
+    $('.box > img').each(function(){
+      $(this).parent()[Math.random() > 0.16 ? 'parent':'append']($(this).show())
+    })
+
+
+  });
+</script>
+</body>
+</html>

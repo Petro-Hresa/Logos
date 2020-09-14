@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Time</title>
+	<link rel="stylesheet" href="time.css">
+</head>
+<body>
+<!--==================Box Upper UCL =====================-->
+<div id="box__upper" class="wrapper__boxes-UCL">
+<!-------Box Upper Date------>
+	<div id="date"></div>
+<!-------Box Upper Time-------->
+	<div id="time">
+		<div id="time__hours"            >00</div>
+		<div id="time__two_dots-first"   class="two-dots">:</div>
+		<div id="time__minutes"          >00</div>
+		<div id="time__two_dots-seconds" class="two-dots">:</div>
+		<div id="time__seconds"          >00</div>
+	</div>
+</div>
+
+<!--================ Box Center UCL======================-->
+<div  id="box__center" class="wrapper__boxes-UCL" style="margin: 3% 0;">
+<!-------------Center Box-L------------>
+	<div id="box-center__box-L" class="style-LR">
+<!--Stopwatch-->
+		<div class="stopwatch">
+			<div id="stopwatch__hours"           >00</div>
+			<div id="stopwatch__two_dots-first"  class="two-dots">:</div>
+			<div id="stopwatch__minutes"         >00</div>
+			<div id="stopwatch__two_dots-second" class="two-dots">:</div>
+			<div id="stopwatch__seconds"         >00</div>
+			<div id="stopwatch__two_dots-third"  class="two-dots">:</div>
+			<div id="stopwatch__milliseconds"    >000</div>
+		</div>
+<!--	Button Stopwatch-->
+		<div class="btn-stopwatch">
+			<button id="btn-stopwatch__start"  class="btn-all">start</button>
+			<button id="btn-stopwatch__loop"   class="btn-all">loop</button>
+			<button id="btn-stopwatch__stop"   class="btn-all">stop</button>
+			<button id="btn-stopwatch__reset"  class="btn-all">reset</button>
+		</div>
+	</div>
+<!--------------Center Box-R------------->
+	<div id="box__center_box-R" class="style-LR">
+		<div id="save-stopwatch"></div>
+	</div>
+</div>
+
+<!--=================Box Lower UCL=======================-->
+<div class="wrapper__boxes-UCL">
+	<!--------------Lower Box-R------------->
+	<div id="inner__box_L" class="style-LR">
+<!--Minutes-->
+      <div id="minutes"  class="style__timer_minutes">25</div>
+		  <p>minutes</p>
+<!--Minutes Button-->
+		  <div id="inner__minutes_btn">
+				<button id="plus__btn"  class="btn-all">+</button>
+				<button id="minus__btn" class="btn-all">-</button>
+			</div>
+	</div>
+	<!--------------lower Box-L------------->
+	<div id="inner__box_R" class="style-LR">
+<!--Timer-->
+		<div id="inner__timer">
+			<div id="timer__minutes"  class="style__timer_minutes">00</div>
+			<div id="timer__two_dots">:</div>
+			<div id="timer__seconds"  class="style__timer_minutes">00</div>
+		</div>
+<!--Timer Button-->
+		<div id="inner__timer_btn">
+			<button id="timer__btn_start" class="btn-all">start</button>
+			<button id="timer__btn_stop"  class="btn-all">stop</button>
+			<button id="timer__btn_reset" class="btn-all">reset</button>
+
+		</div>
+	</div>
+</div>
+
+<script src="time.js"></script>
+</body>
+</html>

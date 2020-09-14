@@ -1,0 +1,515 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all .3s;
+}
+
+/*****************HEADER*******************/
+header {
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	background-color: gray;
+}
+
+/*-============BUTTON FONT============*/
+/* BUTTON FONT Wrapper*/
+#wrapper__btn_font {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*BUTTON FONT Inner */
+.inner__btn__font {
+	display: flex;
+	margin: 5px;
+}
+
+/*BUTTON FONT Buttons */
+.btn__font {
+	width: 40px;
+	display: flex;
+	font-size: 15px;
+	padding: 10px 0;
+	cursor: pointer;
+	background-color: white;
+	justify-content: center;
+}
+.btn__font:hover {
+	background: rgba(220, 220, 220, 200)
+}
+.inner__btn__font > .btn__font:first-child{
+	border-radius : 5px 0 0 5px;
+}
+.inner__btn__font > .btn__font:last-child {
+	border-radius : 0 5px 5px 0;
+}
+
+#edit__text , #sign-in__btn{
+margin: 0 5px;
+border-radius: 5px;
+}
+
+
+/*----------- IN JQUERY---------*/
+/*BUTTON FONT bold*/
+.bold__text {
+	font-weight: bold;
+}
+/*BUTTON FONT cursive*/
+.cursive__text {
+	font-style: italic;
+}
+/*BUTTON FONT underline*/
+.underline__text {
+	text-decoration: underline;
+}
+/*BUTTON FONT through*/
+.through__text {
+	text-decoration: line-through;
+}
+
+/*============= BUTTON FONT FAMILY============*/
+#btn__font-family {
+	position: relative;
+}
+
+/*================FONT FAMILY==================*/
+#box__font-family {
+	left: -125px;
+	font-size: 17px;
+}
+
+/*=============BUTTON FONT SIZE=================*/
+#btn__font-size {
+	position: relative;
+}
+/*===============FONT SIZE=====================*/
+#box__font-size {
+	left: -58px;
+}
+
+/*BUTTON FONT BOXES FAMILY-SIZE*/
+#box__font-family, #box__font-size {
+	top: 109%;
+	display: none;
+	padding: 8px 0;
+	list-style: none;
+	border-radius: 5px;
+	position: absolute;
+	background-color: #fff;
+	box-shadow: 0 0 1px black;
+}
+
+/* BUTTON FONT FAMILY-SIZE LISTS */
+#list__font-family, #list__font-size {
+	list-style: none;
+}
+
+.list__font li {
+	padding: 8px 20px;
+}
+
+.list__font > li:hover {
+	background-color: #dbdbdb;
+}
+
+/*=============== COLOR and BACKGROUND=================*/
+/*COLOR and BACKGROUND 	Wrapper*/
+.wrapper__color_back {
+	top: -400px;
+	width: 469px;
+	font-size: 17px;
+	position: relative;
+	border-radius: 5px;
+	cursor:context-menu;
+	background-color: #fff;
+	font-family: sans-serif;
+	box-shadow: 0 0 1px black;
+}
+
+/* COLOR and BACKGROUND Title*/
+.title__fon {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*COLOR and BACKGROUND  close */
+.close__box_fon > i {
+	padding: 3px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.close__box_fon > i:hover{
+	color:red;
+	transform: scale(1.2);
+}
+
+/*COLOR and BACKGROUND Boxes */
+.stile__boxes {
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 5px;
+	background-color: #fff;
+	border-top: 1px solid rgb(211, 211, 211);
+}
+
+/*COLOR and BACKGROUND Inner*/
+.inner__color__background {
+	width: 53px;
+	height: 55px;
+	margin: 4px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.inner__color__background:hover{
+	transform: scale(1.1);
+}
+
+
+
+/*=============COLOR BUTTON ==============*/
+#btn__color {
+	position: relative;
+}
+/*=============== COLOR  ==============*/
+/* COLOR Wrap */
+#wrap__colors {
+	z-index: 10;
+	right: -45px;
+	position: absolute;
+}
+/*COLOR box*/
+#box__colors {
+	border: none;
+}
+
+
+/*=============BACKGROUND BUTTON===============*/
+#btn__background {
+	position: relative;
+}
+/*================BACKGROUND=================*/
+/*BACKGROUND Wrap*/
+#wrap__background {
+	right: -5px;
+	position: absolute;
+}
+
+/*BACKGROUND Title*/
+#title__back {
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+/*BACKGROUND Inner buttons */
+#inner__items_fon {
+	top: 61px;
+	z-index: 10;
+	display: flex;
+	position: absolute;
+	background-color: #fff;
+}
+
+/*BACKGROUND buttons*/
+.btn__itm_fon {
+	top: 2px;
+	cursor: pointer;
+	transition: none;
+	padding: 5px 10px;
+	color: DodgerBlue;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/*------------BACKGROUND-image--------------*/
+.inner__img__background {
+	margin: 5px;
+	height: 50px;
+	width: 132px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-position: center;
+	background-size: 130px 50px;
+	background-repeat: no-repeat;
+}
+.inner__img__background:hover{
+	transform: scale(1.1);
+}
+
+/*------------------BACKGROUND FILE--------------------*/
+/*BACKGROUND FILE Wrapper*/
+#wrapper__input_file{
+	width: 100%;
+	display: flex;
+	border-radius: 5px;
+	cursor:context-menu;
+	border: 1px solid #000;
+	justify-content: space-between;
+}
+
+/*BACKGROUND FILE input*/
+#file{
+	opacity: 0;
+	width:.1px;
+	height:.1px;
+	z-index: -1;
+	overflow: hidden;
+	position: absolute;
+}
+
+/*BACKGROUND FILE label*/
+#file + label {
+	cursor: pointer;
+	padding: 8px 20px 8px 10px;
+}
+
+/*BACKGROUND FILE button*/
+#btn-browse{
+  border:none;
+	padding: 10px;
+	outline: none;
+	cursor: pointer;
+	border-radius:0 5px 5px 0  ;
+}
+#btn-browse:hover{
+	color:white;
+	background-color: #9a9a9a;
+}
+
+/*===============BUTTON SIGN IN===============*/
+#sign-in__btn{
+	cursor:auto;
+	position: relative;
+}
+/*==================SIGN IN===================*/
+/* SIGN IN */
+#sign-in{
+	top: -300px;
+	width: 469px;
+	border-radius:5px;
+	position: absolute;
+	text-align: center;
+	background-color: #fff;
+	font-family: sans-serif;
+}
+
+/* SIGN IN title*/
+#sign-in > h2{
+	margin: 20px 0;
+}
+
+/*SIGN IN form*/
+#sign-in__form{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	border-top:1px solid rgb(211, 211, 211);
+}
+
+/*SIGN IN items form*/
+.sign-in__form_item{
+	margin: 8px;
+	padding: 8px;
+	border-radius: 5px;
+	outline-color: DodgerBlue;
+	border: 1px solid rgb(211, 211, 211);
+}
+
+/*SIGN IN error*/
+#form-item__error-enter{
+	color:red;
+	display: flex;
+	font-size: 12px;
+	padding: 0 10px;
+	justify-content: flex-start;
+}
+
+/*==================SIGN OUT===================*/
+#sign-out{
+	top: -300px;
+	width: 300px;
+	display: flex;
+	padding: 20px 10px;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 0 1px black;
+}
+/*SIGN OUT button cancel*/
+#btn__cancel{
+	background-color: black;
+	outline-color: gray;
+}
+/*SIGN OUT button sign out*/
+#btn__sign-out{
+	background-color: #f0143d;
+	outline-color: #ff7b76;
+}
+
+
+
+
+/*************** CREATE TABLE and lIST**********************/
+#wrapper__btn_table-list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*CREATE TABLE and lIST Close  */
+.close__box_create{
+	padding: 5px;
+	cursor:pointer;
+	transition:ease .1s ;
+}
+.close__box_create:hover{
+	color:red;
+	transform: scale(1.2);
+}
+
+/*CREATE TABLE Error */
+.error__create{
+	color:#f0143d;
+	margin:  5px 5px 10px 10px;
+	font-size: 12px
+}
+
+/*CREATE TABLE Buttons  */
+.buttons__table{
+	margin-bottom: 20px;
+}
+
+.btn__create{
+	width: 46.8%;
+	margin: 0 10px;
+	padding: 8px 10px;
+	color:white;
+	border:none;
+	cursor:pointer;
+	border-radius:5px;
+}
+.btn__create:first-child{
+	background: #f0143d;
+	outline-color: #ff9595;
+}
+.btn__create:last-child{
+	background: #00bf00;
+	outline-color: #70bf72;
+}
+
+
+/*=============================CREATE TABLE=============================*/
+/*CREATE TABLE*/
+#create__table{
+	width: 700px;
+	position:absolute;
+	top: -400px;
+	display: flex;
+	flex-direction: column;
+}
+
+/*CREATE TABLE Form */
+#form__table{
+	border-top: 1px solid rgb(211, 211, 211) ;
+	display: flex;
+}
+
+/*CREATE TABLE Boxes Left Right */
+.create__table_boxes-LR{
+	width: 50%;
+	padding: 10px 10px 0 10px;
+	display: flex;
+	font-size:14px;
+	flex-direction: column;
+}
+
+/*CREATE TABLE Inputs */
+.input__table{
+	padding: 5px 10px;
+	margin: 5px 0 15px 0;
+	border-radius:5px;
+	outline-color: #f0143d;
+	border:1px solid rgb(211, 211, 211)
+}
+.input__table:last-child{
+	margin-bottom: 0;
+}
+
+/*CREATE TABLE Choose Style and Color */
+#choose__style__color_border{
+	display: flex;
+}
+.inner__choose{
+	width: 50%;
+}
+.inner__choose > select{
+	cursor:pointer;
+}
+
+
+/*===========CREATE LIST============*/
+/*CREATE LIST box*/
+.create__list{
+	top:  -400px;
+	width: 400px;
+	font-family: sans-serif;
+	position: absolute;
+  box-shadow:0 0 1px black ;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #fff;
+}
+
+/*CREATE LIST input*/
+.input__list{
+	width: 100%;
+}
+.input__list:last-child{
+	cursor:pointer;
+}
+/*CREATE LIST title*/
+.title__list{
+	padding: 10px 0;
+}
+
+/*CREATE LIST wrapper buttons*/
+.wrap__btn__list{
+	display: flex;
+}
+
+/*CREATE LIST buttons*/
+.btn__list{
+	width: 50%;
+}
+.btn__list:first-child{
+	margin: 0 4px 0 0 ;
+}
+.btn__list:last-child{
+	margin: 0 0 0 4px ;
+}
+
+/****************** MAIN ********************/
+main {
+	padding: 20px;
+	outline: none;
+	line-height: 25px;
+	background-size: cover;
+	height: calc(100vh - 80px);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/*textarea*/
+#textarea{
+	width: 100%;
+	display: none;
+	outline: none;
+	font-size: 16px;
+	height: calc(100vh - 80px);
+}
+
+

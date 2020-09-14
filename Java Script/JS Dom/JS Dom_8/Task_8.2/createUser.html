@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Create Users</title>
+	<link rel="stylesheet" href="createUser.css">
+</head>
+<body>
+<!--===========Box Left============-->
+<div id="box__L">
+<form name="form__enter-data" >
+	<p>Login</p>
+	<input type="text"     class="input__style"  placeholder="Enter login no more 20 characters">
+
+	<p>Password</p>
+	<input type="password" class="input__style"  placeholder="Enter password 5-15 characters">
+
+	<p>Email address</p>
+	<input type="email"    class="input__style"  placeholder="Enter email example em@il.com">
+</form>
+<!--	Button Add User-->
+<button id="btn__add-user" class="btn__all">Add user</button>
+<!--	Button Edit User-->
+<button id="btn__edit-user" class="btn__all">Edit user</button>
+</div>
+<!--==========Box Right=============-->
+<div id="box__R">
+<!--	Table-->
+	<table id="table__users">
+		<thead>
+		<tr id="head__TR">
+			<th>#</th>
+			<th>Login</th>
+			<th>Password</th>
+			<th>Email</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+		</thead>
+		<tbody id="tbody"></tbody>
+	</table>
+</div>
+
+<script src="createUser.js"></script>
+</body>
+</html>

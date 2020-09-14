@@ -1,0 +1,198 @@
+body * {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	font-family:sans-serif;
+}
+
+/*Wrapper Form*/
+.form-wrap{
+	width: 500px;
+	height: 510px;
+	display: flex;
+	margin: 100px auto;
+	border-radius: 10px;
+	flex-direction: column;
+	border: 2px solid grey;
+
+}
+
+/*Box-Title Form*/
+.form-wrap__box_title{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	font-size: 20px;
+	color:whitesmoke;
+	align-items: center;
+	justify-content: center;
+	background: mediumseagreen;
+	border-radius: 8px 8px 0 0;
+}
+
+/*Paragraph of form*/
+p{
+	font-size: 15px;
+	padding: 15px  0 8px 0;
+}
+
+/* Input Fields*/
+.style__input_fields{
+	width: 100%;
+	padding: 7px;
+	outline: none;
+	font-size: 15px;
+	position: relative;
+	border-radius: 5px;
+	transition: box-shadow.3s;
+	border: 1px solid rgb(220, 220, 220);
+}
+
+/*Radiobutton*/
+input[type=radio]{
+display: none;
+}
+.form__radio_label{
+	margin-right: 15px;
+}
+.form__radio_box{
+	width: 12px;
+	height: 12px;
+	position:relative;
+	border-radius: 50%;
+	margin:20px 5px 0 0;
+	display: inline-block;
+	border: 1px solid #cdc7cc;
+}
+.form__radio_checked{
+	top:50%;
+	left: 50%;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	border-radius: 50%;
+	display: inline-block;
+	background-color:white;
+	transform:translate(-50% ,-50%);
+}
+input[type=radio]:checked + .form__radio_box{
+	background-color: DodgerBlue;
+	border: 1px solid DeepSkyBlue;
+}
+
+/*Checkbox Form*/
+.label_checkbox:before{
+	content:'';
+	z-index: 1;
+	width: 12px;
+	height: 12px;
+	border-radius: 4px;
+	margin:20px 5px 0 0;
+	display: inline-block;
+	border: 1px solid #cdc7cc;
+}
+.label_checkbox:after{
+	content: '';
+	top: 23px;
+	left: 3px;
+	z-index: 2;
+	width: 8px;
+	height: 8px;
+	display: block;
+	position: absolute;
+	background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e") no-repeat;
+}
+input[type=checkbox]:checked + .label_checkbox:before{
+	background-color: DodgerBlue;
+	border: 1px solid DeepSkyBlue;
+}
+
+/*Button sign up Form*/
+.button__sign-up{
+	color:white;
+	padding: 9px;
+	font-size: 20px;
+	margin: 10px 0 0 0;
+	background:mediumseagreen;
+	transition: background .3s;
+}
+
+/*========================User Form================================*/
+.wrap__user-form{
+	width: 400px;
+	height: 400px;
+	display: none;
+	margin: 150px auto;
+	border-radius: 10px;
+	border: 2px solid grey;
+	background:mediumseagreen ;
+}
+
+/*.Box create form*/
+.box__create_user-form{
+	width: 100%;
+	height: 250px;
+	display: flex;
+	margin-top: 100px;
+	position: relative;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
+	justify-content: flex-end;
+}
+
+/*Create style user form*/
+.style__create_form{
+	width: 100%;
+	display: flex;
+	min-height: 20px;
+	align-items: center;
+	justify-content: center;
+}
+.img__user{
+	top:-50px;
+	width: 120px;
+	height: 120px;
+	padding: 5px;
+	position:absolute;
+	border-radius: 100%;
+	background-color: #fff;
+}
+.horizontal__line{
+	min-height: 0;
+	border: .5px solid rgba(220, 220, 220, .35);
+}
+
+/*Button sign out Form*/
+.btn__sign-out{
+	width: 80px;
+	outline:none;
+	margin: 20px 0;
+	transition: .5s;
+	font-size: 15px;
+	min-height: 30px;
+	background: white;
+	border-radius:4px;
+	color:mediumseagreen;
+	border: 1px solid mediumseagreen;
+	box-shadow: 0 0 1px 0  mediumseagreen;
+}
+
+.btn__sign-out:hover{
+	color:white;
+	background: LimeGreen;
+	text-shadow: 0 0 1px white;
+}
+/*Icons form*/
+.icon{
+	color: #f0f0f0;
+	display: flex;
+	padding: 10px;
+	font-size: 25px;
+	justify-content: center;
+}
+.git{
+	margin: 0 15px;
+}
+
+

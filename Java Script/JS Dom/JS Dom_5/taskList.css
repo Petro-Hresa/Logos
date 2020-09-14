@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Cuprum', sans-serif;
+
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(white 50%, black 50%) no-repeat center;
+}
+
+/*Image pen*/
+.img-pen{
+	width: 300px;
+	height: 380px;
+
+}
+/*Tablet*/
+.tablet{
+	left: -5%;
+	width: 64%;
+	padding: 18px 20px;
+	display: flex;
+	position: relative;
+	border-radius: 36px;
+	align-items: center;
+	border: 3px solid grey;
+	justify-content: center;
+	background-color: black;
+}
+.tablet::before{
+	content: '';
+	top: 11%;
+	left: -.9%;
+	width: 0.5%;
+	height: 7%;
+	display: block;
+	position:absolute;
+	border-radius:4px 0 0 4px;
+	background: linear-gradient(grey , white , grey  ) no-repeat center;
+}
+
+
+/* Styles Left_Box Right_Box*/
+.left__box ,.right__box {
+	width: 100%;
+  height: 53vh;
+	padding:35px 20px ;
+	background-color: #fff;
+}
+.left__box {
+	margin-right: 3px;
+	border-radius: 15px 0 0 15px;
+}
+.right__box {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 0 15px 15px 0;
+}
+.left__box_title,
+.box__right_title{
+	color:red;
+}
+
+/*Input Enter Task*/
+#enter-task{
+	width: 200px;
+	border: none;
+	outline: none;
+	padding:30px 0 3px ;
+	border-bottom: 2px solid black;
+}
+
+/*button Add Task*/
+#add-task{
+	border: none;
+	color: wheat;
+	margin: 20px;
+	outline: none;
+	padding: 10px;
+	font-size: 14px;
+	border-radius:5px;
+	letter-spacing: 1px;
+	background-color: black;
+	transition: box-shadow .2s;
+}
+
+/*Style Error Enter*/
+.error{
+	top: 119px;
+	width: 77%;
+	font-size: 14px;
+	line-height: 25px;
+	padding: 15px;
+	border-radius: 5px 0 5px 5px;
+	position:absolute;
+	background-color: rgba(255, 218, 185, 1);
+}
+
+/*Close Error Enter*/
+.close__error{
+	top: 10px;
+	z-index: 1;
+	right: 10px;
+	width: 10px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	background: url("https://cdn1.iconfinder.com/data/icons/lightly-selected/30/close-480.png") no-repeat center;
+	background-size: 10px 10px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

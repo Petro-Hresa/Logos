@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="Jquery.css">
+	<script src="https://kit.fontawesome.com/41364c8c68.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
+	<title>JQuery lesson 1</title>
+</head>
+<body>
+<!--******************* Header ********************-->
+<header>
+	<!--===========Wrapper Buttons Font style==============-->
+	<div id="wrapper__btn_font">
+		<div id="edit__text" class="btn__font"><i class="fas fa-code"></i></div>
+		<!--Inner Buttons Font style-->
+		<div class="inner__btn__font">
+			<!--Buttons font type -->
+			<div id="btn__bold" class="btn__font"><i class="fas fa-bold"></i></div>
+			<div id="btn__cursive" class="btn__font"><i class="fas fa-italic"></i></div>
+			<div id="btn__underline" class="btn__font"><i class="fas fa-underline"></i></div>
+			<div id="btn__through" class="btn__font"><i class="fas fa-strikethrough"></i></div>
+		</div>
+		<!--	Inner Buttons Font style-->
+		<div class="inner__btn__font">
+			<!--Buttons position-->
+			<div id="btn__text-left" class="btn__font"><i class="fas fa-align-left down"></i></div>
+			<div id="btn__text-center" class="btn__font"><i class="fas fa-align-center"></i></div>
+			<div id="btn__text-right" class="btn__font"><i class="fas fa-align-right"></i></div>
+		</div>
+		<!-- Inner Buttons Font style-->
+		<div class="inner__btn__font">
+			<!------------------------Button Font-family-------------------------->
+			<div id="btn__font-family" class="btn__font">
+				<i class="fas fa-font"></i>
+				<i class="fas fa-sort-down"></i>
+				<!--Font-family box-->
+				<div id="box__font-family" class="close__boxes">
+					<!--Font-family list-->
+					<ul id="list__font-family" class="list__font">
+						<li>Arial</li>
+						<li>Georgia</li>
+						<li>Impact</li>
+						<li>Tahoma</li>
+						<li>Time New Roman</li>
+						<li>Verdana</li>
+					</ul>
+				</div>
+			</div>
+			<!-------------------------Button Font-size--------------------------->
+			<div id="btn__font-size" class="btn__font">
+				<i class="fas fa-text-height"></i>
+				<i class="fas fa-sort-down"></i>
+				<!--Font-size box-->
+				<div id="box__font-size" class="close__boxes">
+					<!--Font-size list-->
+					<ul id="list__font-size" class="list__font">
+						<li>12px</li>
+						<li>14px</li>
+						<li>16px</li>
+						<li>18px</li>
+						<li>20px</li>
+						<li>22px</li>
+						<li>25px</li>
+						<li>30px</li>
+					</ul>
+				</div>
+			</div>
+			<!-----------------------Button Color text ---------------------->
+			<div id="btn__color" class="btn__font"><i class="fas fa-palette"></i>
+				<!-- Color text box -->
+				<div id="wrap__colors" class="wrapper__color_back">
+					<div class="title__fon">Choose text color
+						<!-- Color text close -->
+						<div class="close__box_fon"><i class="fas fa-times"></i></div>
+					</div>
+					<!-- Color text box colors -->
+					<div id="box__colors" class="stile__boxes"></div>
+				</div>
+			</div>
+			<!--------------------- Button Background ---------------------->
+			<div id="btn__background" class="btn__font"><i class="fas fa-image"></i>
+				<!--Background box-->
+				<div id="wrap__background" class="wrapper__color_back ">
+					<!--Background title-->
+					<div id="title__back" class="title__fon">Choose background color or image
+						<!--Background close-->
+						<div class="close__box_fon">
+							<i class="fas fa-times"></i>
+						</div>
+					</div>
+					<!--Background buttons-->
+					<div id="inner__items_fon">
+						<div id="color" class="btn__itm_fon">Color</div>
+						<div id="images" class="btn__itm_fon">Images</div>
+						<div id="files" class="btn__itm_fon">Files</div>
+					</div>
+					<!--Background boxes-->
+					<div id="box__beg_color" class="stile__boxes"></div>
+					<div id="box__beg_images" class="stile__boxes"></div>
+					<div id="box__beg_files" class="stile__boxes">
+						<div id="wrapper__input_file">
+							<input type="file" id="file">
+							<label for="file" id="label__file">Choose file...</label>
+							<button id="btn-browse">Browse</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!------------Button Sign-In------------>
+		<div id="sign-in__btn" class="btn__font">
+			<i id="close__btn" class="fas fa-lock"></i>
+			<i id="open__btn" class="fas fa-lock-open"></i>
+		</div>
+		<!--Sign-In box -->
+		<div id="sign-in">
+			<!--Sign-In title -->
+			<h2>Sign in</h2>
+			<!--Sign-In form -->
+			<form id="sign-in__form" name="signInForm" autocomplete="on">
+				<input type="text" class="sign-in__form_item" placeholder="Login hear.. Admin">
+				<input type="password" class="sign-in__form_item" placeholder="Password hear.. 1111">
+				<p id="form-item__error-enter"></p>
+				<button type="button" class="sign-in__form_item">Sign in</button>
+			</form>
+		</div>
+		<!--Sign-Out button -->
+		<div id="sign-out">
+			<button id="btn__cancel" class="btn__create buttons__sign-out ">Cancel</button>
+			<button id="btn__sign-out" class="btn__create buttons__sign-out">Sign out</button>
+		</div>
+	</div>
+
+	<!--==================	Wrapper Create Table and list==================--->
+	<div id="wrapper__btn_table-list">
+		<!----------------------------Button Save------------------------------->
+		<div id="btn__save" class="btn__font"><i class="fas fa-save"></i></div>
+		<!----------------------------Button Table------------------------------>
+		<div id="btn__table" class="btn__font"><i class="fas fa-table"></i></div>
+		<!--Table box create -->
+		<div id="create__table" class="wrapper__color_back">
+			<!--Table title-->
+			<div class="title__fon">Create table
+				<!--Table close-->
+				<div class="close__box_create"><i class="fas fa-times"></i></div>
+			</div>
+			<!--Table Form  -->
+			<form name="formTable" id="form__table">
+				<!--Form Table box Left-->
+				<div id="create__table_box-L" class="create__table_boxes-LR">
+					<p>Count TR:</p>
+					<input type="text" class="input__table" placeholder="Type here..">
+					<p>Width of TD:</p>
+					<input type="text" class="input__table" placeholder="Type here..">
+					<p>Width of border.</p>
+					<input type="text" class="input__table" placeholder="Type here..">
+				</div>
+				<!--Form Table box Right-->
+				<div id="create__table_box-R" class="create__table_boxes-LR">
+					<p>Count TD:</p>
+					<input type="text" class="input__table" placeholder="Type here..">
+					<p>Height of TD:</p>
+					<input type="text" class="input__table" placeholder="Type here..">
+					<div id="choose__style__color_border">
+						<div class="inner__choose">
+							<p>Style of border</p>
+							<select class="input__table">
+								<option value="" selected disabled>Choose style..</option>
+								<option value="dotted">dotted</option>
+								<option value="dashed">dashed</option>
+								<option value="solid">solid</option>
+								<option value="double">double</option>
+								<option value="groove">groove</option>
+								<option value="ridge">ridge</option>
+								<option value="inset">inset</option>
+								<option value="outset">outset</option>
+							</select>
+						</div>
+						<div class="inner__choose">
+							<p>Color of border</p>
+							<select class="input__table">
+								<option value="" selected disabled>Choose color..</option>
+								<option value="black">black</option>
+								<option value="red">red</option>
+								<option value="green">green</option>
+								<option value="blue">blue</option>
+								<option value="yellow">yellow</option>
+								<option value="white">white</option>
+								<option value="gray">gray</option>
+								<option value="pink">pink</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</form>
+			<!--Table Error-->
+			<p id="error__table" class="error__create"></p>
+			<!--Table Buttons -->
+			<div class="buttons__table">
+				<button id="reset" class="btn__create">Reset</button>
+				<button id="btn__create-table" class="btn__create">Create table</button>
+			</div>
+		</div>
+		<!-----------------------List OL Button ------------------------------>
+		<div id="btn__list-ol" class="btn__font"><i class="fas fa-list-ol"></i></div>
+		<!--list OL box create -->
+		<div id="create__list-ol" class="create__list">
+			<!--list OL title -->
+			<div class="title__fon title__list">Create Ol
+				<!--list OL close -->
+				<div class="close__box_create"><i class="fas fa-times"></i></div>
+			</div>
+			<!--list OL form-->
+			<form name="createListOl">
+				<p>Count li item</p>
+				<input type="text" class="input__list input__table" placeholder="Type here..">
+				<p>Type mark of list</p>
+				<select class="input__list input__table">
+					<option value="" selected disabled>choose Ol type mark</option>
+					<option value="decimal">1</option>
+					<option value="upper-roman">I</option>
+					<option value="lower-roman">i</option>
+					<option value="upper-latin">A</option>
+					<option value="lower-latin">a</option>
+				</select>
+			</form>
+			<!--list OL error-->
+			<p id="error__ol" class="error__create"></p>
+			<!--list Ol buttons-->
+			<div class="wrap__btn__list">
+				<button id="reset-ol" class="btn__create btn__list">Reset</button>
+				<button id="btn__create-ol" class="btn__create btn__list">Create List</button>
+			</div>
+		</div>
+		<!-------------------- List UL Button------------------------->
+		<div id="btn__list-ul" class="btn__font"><i class="fas fa-list-ul"></i></div>
+		<!-- list UL box -->
+		<div id="create__list-ul" class="create__list">
+			<!-- list UL title -->
+			<div class="title__fon title__list">Create Ul
+				<!-- list UL close -->
+				<div class="close__box_create"><i class="fas fa-times"></i></div>
+			</div>
+			<!-- list UL form -->
+			<form name="createListUl">
+				<p>Count li item</p>
+				<input type="text" class="input__list input__table" placeholder="Type here..">
+				<p>Type mark of list</p>
+				<select class="input__list input__table">
+					<option value="" selected disabled>choose Ul type mark</option>
+					<option value="circle">circle</option>
+					<option value="disc">disc</option>
+					<option value="square">square</option>
+				</select>
+			</form>
+			<!-- list UL error -->
+			<p id="error__ul" class="error__create"></p>
+			<!-- list UL buttons -->
+			<div class="wrap__btn__list">
+				<button id="reset-ul" class="btn__create btn__list">Reset</button>
+				<button id="btn__create-ul" class="btn__create btn__list">Create List</button>
+			</div>
+		</div>
+	</div>
+</header>
+<!--========================= Main ==============================-->
+<main id="content">
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sint.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sint.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sint.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sint.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sint.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sint.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, sint.</p>
+</main>
+<!--Textarea-->
+<textarea id="textarea"></textarea>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="Jquery.js"></script>
+</body>
+</html>

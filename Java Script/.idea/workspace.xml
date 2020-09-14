@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee0fb57c-99f5-453f-a7c5-2e872f0bfe6f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1XejxkxBYAWBTzSeyZJASGqsDtv" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson SCSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\Петро Греса\HOME WORK\Java Script\Lesson4 JS While pass" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.pass.js">
+    <configuration name="While-password.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lesson4 JS While pass/While-password.js" working-dir="$PROJECT_DIR$/Lesson4 JS While pass">
+      <method v="2" />
+    </configuration>
+    <configuration name="pass.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lesson2 JS Conditional operators/task 2 password/pass.js" working-dir="$PROJECT_DIR$/Lesson2 JS Conditional operators/task 2 password">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.pass.js" />
+        <item itemvalue="Node.js.While-password.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee0fb57c-99f5-453f-a7c5-2e872f0bfe6f" name="Default Changelist" comment="" />
+      <created>1581413702711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581413702711</updated>
+      <workItem from="1581413705036" duration="8721000" />
+      <workItem from="1581423114954" duration="5808000" />
+      <workItem from="1581437845768" duration="1347000" />
+      <workItem from="1581444060865" duration="6772000" />
+      <workItem from="1581499842894" duration="2203000" />
+      <workItem from="1581503003419" duration="2361000" />
+      <workItem from="1581507841390" duration="1892000" />
+      <workItem from="1581535712131" duration="644000" />
+      <workItem from="1581570211065" duration="9670000" />
+      <workItem from="1581589987689" duration="14264000" />
+      <workItem from="1581622156742" duration="1162000" />
+      <workItem from="1581624212486" duration="1267000" />
+      <workItem from="1581626345114" duration="104000" />
+      <workItem from="1581626473219" duration="10000" />
+      <workItem from="1581756593860" duration="12306000" />
+      <workItem from="1581771694305" duration="64000" />
+      <workItem from="1581863111862" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	box-sizing:border-box;
+	font-family:sans-serif;
+}
+body{
+	display: flex;
+	margin-top: 10vh;
+	justify-content: center;
+}
+/*//////////Global Styles///////////*/
+.btn__all{
+	border:none;
+	outline: none;
+	padding: 8px 15px;
+	border-radius: 5px ;
+}
+#box__L,
+#box__R{
+	min-width: 40%;
+	padding: 5px 10px;
+}
+
+/*============Box Left===============*/
+/*Inputs*/
+.input__style{
+	width: 100%;
+	padding: 10px;
+	outline: none;
+	border-radius: 5px;
+	margin: 8px 0 13px 0;
+	border: 1px solid #cdcdcd;
+}
+/*buttons add User and edit User*/
+#btn__add-user ,
+#btn__edit-user{
+	color: #00bf00;
+	background: none;
+	border: 1px solid #00bf00;
+}
+/*Button Add User*/
+#btn__add-user:hover{
+	color: white;
+	background-color: green;
+}
+/*Button Edit User*/
+#btn__edit-user{
+	display: none;
+}
+#btn__add-user:hover{
+	color: white;
+	background-color: green;
+}
+/*==============Box Right==============*/
+#table__users{
+	min-width: 100%;
+	margin-top: 21px;
+	text-align: left;
+	border-collapse:collapse;
+}
+th{
+	padding: 14px 10px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+tr{
+	border-top: 1px solid #c1c1c1;
+}
+td{
+	padding: 8px 10px;
+}
+
+/*Button Edit*/
+.btn__edit{
+	padding: 8px 10px;
+	background-color: #ffdd00;
+}
+.btn__edit:hover{
+	background-color:#f7c400 ;
+}
+
+/*Button Delete*/
+.btn__delete{
+	color:white;
+	padding: 8px 10px;
+	background-color: #f81440;
+}
+.btn__delete:hover{
+	background-color: #da143d;
+}

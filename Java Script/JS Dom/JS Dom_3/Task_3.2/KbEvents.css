@@ -1,0 +1,56 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	background: grey;
+}
+
+/*Wrapper keyboard*/
+.wrapper-keyboard{
+	max-width: 1000px;
+}
+
+/*Textarea*/
+#input-field{
+	width: 98%;
+	height: 300px;
+	margin: 5% 0 10px 0;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	outline: none;
+	cursor:text;
+}
+/*Keyboard keys*/
+.keyboards__keys{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*Keyboard key*/
+.keyboard__key{
+	min-width: 60px;
+	height: 60px;
+	background: white;
+	border-radius: 10px;
+	margin: 5px 7px 5px 0;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	outline: none;
+	border:none;
+	transition: .2s;
+}
+
+/*Keydown style for key */
+.keyboard {
+	background:grey;
+	color:#f8f9fa;
+}
+
+
+

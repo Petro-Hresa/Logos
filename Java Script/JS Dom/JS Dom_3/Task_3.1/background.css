@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:sans-serif;
+}
+h2{
+	cursor:pointer;
+	padding: 0 10px;
+}
+
+/*Create  wrapper for box background page*/
+.wrapDiv{
+	top: 40%;
+	left: 50%;
+	width: 366px;
+	height: 304px;
+	display: flex;
+	flex-wrap: wrap;
+	position:absolute;
+	transform: translate(-50% , -50%);
+}
+
+/*Create box for color and images*/
+.boxColor{
+	width: 120px;
+	height: 100px;
+	cursor:pointer;
+	border: 1px solid #000;
+}
+

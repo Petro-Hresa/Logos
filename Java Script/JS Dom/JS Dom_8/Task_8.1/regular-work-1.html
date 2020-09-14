@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Regular Work first</title>
+	<link rel="stylesheet" href="regular-work-1.css">
+	<script src="https://kit.fontawesome.com/41364c8c68.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="jquery/jquery.maskedinput.min.js"></script>
+</head>
+<body>
+
+<!--===========Form Sign Up==============-->
+<div id="wrapper__form-signUp">
+<form name="form-signUp">
+<!---Title Form --->
+		 <p id="form-signUp__title">Please sign up</p>
+
+		 <label class="label__inputs" >
+			    First name
+			    <input type="text" class="inputs__form-signUp">
+			    <span class="good good__or__bad_enters"><i class="fas fa-chevron-down"></i></span>
+			    <span class="bed  good__or__bad_enters"><i class="fas fa-times"></i></span>
+		 </label>
+
+		<div class="errorEnter">Please provide a valid First name </div>
+
+		 <label class="label__inputs">
+			    Last name
+			    <input type="text"  class="inputs__form-signUp">
+			    <span class="good good__or__bad_enters" ><i class="fas fa-chevron-down"></i></span>
+			    <span class="bed good__or__bad_enters" > <i class="fas fa-times"></i></span>
+		 </label>
+
+		<div class="errorEnter">Please provide a valid Last name </div>
+
+		 <label class="label__inputs">
+			     Email address
+			    <input type="email" class="inputs__form-signUp" >
+					<span class="good good__or__bad_enters"><i class="fas fa-chevron-down"></i></span>
+					<span class="bed  good__or__bad_enters"> <i class="fas fa-times"></i></span>
+		 </label>
+
+		 <div class="errorEnter">Please provide a valid Email address</div>
+
+		 <label class="label__inputs">
+			     Phone number
+		      <input type="text" id="phone"  class="inputs__form-signUp">
+			    <span class="good good__or__bad_enters"><i class="fas fa-chevron-down"></i></span>
+		     	<span class="bed good__or__bad_enters"> <i class="fas fa-times"></i></span>
+		 </label>
+
+		 <div class="errorEnter">Please provide a valid Phone number </div>
+
+		 <label class="label__inputs">
+			    Password
+			   <input type="password" class="inputs__form-signUp" autocomplete="current-password">
+			   <span class="good good__or__bad_enters"><i class="fas fa-chevron-down"></i></span>
+			   <span class="bed good__or__bad_enters"> <i class="fas fa-times"></i></span>
+		 </label>
+	   <div class="errorEnter">Please provide a valid Password </div>
+	</form>
+	<!--Button form-->
+	<button id="btn__form-signUp" class="inputs__form-signUp">Sign up</button>
+</div>
+<script src="regular-work-1.js"></script>
+</body>
+</html>
