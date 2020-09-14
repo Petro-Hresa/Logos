@@ -1,0 +1,197 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('img/b1.jpg') fixed no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.planet-Earth {
+	width: 400px;
+	top: 170px;
+	left: 200px;
+	position: relative;
+	z-index: 3;
+}
+
+.orbita1, .orbita2 {
+	width: 600px;
+	height: 160px;
+	left: 100px;
+	top: 280px;
+	border-radius: 100%;
+	position: absolute;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
+
+.orbita1 {
+	border-top: 0.3px solid gray;
+	z-index: 0;
+}
+
+.orbita2 {
+	border-bottom: 0.6px solid gray;
+	z-index: 4;
+}
+
+.satelite {
+	width: 100px;
+	top: 250px;
+	left: 350px;
+	position: absolute;
+	z-index: 0;
+	animation: Orbita 20s linear infinite;
+}
+
+@keyframes Orbita {
+
+	0% {
+		width: 50px;
+	}
+
+	10% {
+		left: 585px;
+		top: 280px;
+		width: 70px;
+	}
+
+	20% {
+		left: 625px;
+		top: 295px;
+		width: 80px;
+	}
+
+	30% {
+		left: 653px;
+		top: 325px;
+		width: 90px;
+	}
+
+	40% {
+		left: 640px;
+		top: 346px;
+		width: 100px;
+	}
+
+	45% {
+		left: 585px;
+		top: 380px;
+		width: 110px;
+	}
+
+	47% {
+		z-index: 10;
+	}
+
+	50% {
+		left: 350px;
+		top: 410px;
+	}
+
+	55% {
+		left: 150px;
+		top: 395px;
+	}
+
+	60% {
+		left: 100px;
+		top: 380px;
+		width: 100px;
+	}
+
+	70% {
+		left: 60px;
+		top: 360px;
+	}
+
+	80% {
+		left: 50px;
+		top: 340px;
+		width: 90px;
+	}
+
+	90% {
+		left: 80px;
+		top: 310px;
+		width: 80px;
+	}
+
+	93% {
+		z-index: 0;
+	}
+
+	95% {
+		left: 150px;
+		top: 280px;
+		width: 70px;
+	}
+
+	100% {
+		left: 350px;
+		top: 255px;
+		width: 50px;
+		transform: rotate(360deg);
+	}
+}
+
+.aliens {
+	width: 220px;
+	left: 700px;
+	bottom: 0;
+	position: absolute;
+	animation: aliens 20s linear infinite;
+	z-index: 30;
+}
+
+@keyframes aliens {
+	0% {
+		bottom: -120px;
+	}
+	15% {
+		width: 150px;
+	}
+	25% {
+		left: 700px;
+		bottom: 600px;
+		width: 100px;
+	}
+
+	40% {
+		left: 730px;
+		bottom: 750px;
+		width: 70px;
+	}
+
+	45% {
+		left: 500px;
+		bottom: 800px;
+		width: 60px;
+		z-index: 0;
+	}
+
+	50% {
+		left: 400px;
+		bottom: 800px;
+		width: 50px;
+		z-index: 0;
+	}
+	55% {
+		left: 100px;
+		bottom: 750px;
+		z-index: 0
+	}
+	75% {
+		left: 700px;
+		bottom: 450px;
+		z-index: 30;
+	}
+	100% {
+		left: 100%;
+		bottom: -220px;
+	}
+}

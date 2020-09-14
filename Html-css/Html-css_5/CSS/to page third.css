@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "bahij-sultannahia";
+	font-family: "ChronicaPro-Regular";
+}
+
+@font-face {
+	src: url("../Images/ChronicaPro-Regular.ttf") format("truetype");
+	font-family: "ChronicaPro-Regular";
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	src: url("../Images/ChronicaPro-Regular.ttf") format("truetype");
+	font-family: "bahij-sultannahia";
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* Menu */
+.nav {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+}
+
+.search__wrap {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.search__wrap a {
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(58, 58, 58);
+	transition: color 0.7s ease;
+}
+
+.search__wrap a:active {
+	color: rgb(0, 56, 240);
+}
+
+.search__wrap a:hover {
+	color: rgb(0, 56, 240);
+	transition: color 0.7s ease;
+}
+
+/* Section */
+#wrapper {
+	width: 98%;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 15px;
+	background: rgba(77, 77, 77, 0.10);
+}
+
+/* Table */
+table {
+	width: 80%;
+	height: 500px;
+	margin: 0 auto;
+	padding: 100px;
+	border-spacing: 0 10px;
+	border-collapse: separate;
+}
+
+th {
+	padding: 10px 15px;
+}
+
+td {
+	padding: 10px 15px;
+	text-align: center;
+}
+
+tr:hover td {
+	transition: all .5s;
+	background: #9b9c9e;
+}
+
+td:first-child {
+	border-radius: 20px 0 0 20px;
+}
+
+td:last-child {
+	border-radius: 0 20px 20px 0;
+}
+
+/* Checkboxes */
+.wrap-ceck {
+	height: 24px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+.checkbox-input {
+	display: none;
+}
+
+.label {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	position: absolute;
+	border: 0.7px solid rgb(132, 189, 181);
+}
+
+.label::before {
+	content: '';
+	top: -2px;
+	left: -2px;
+	width: 25px;
+	height: 25px;
+	opacity: 0;
+	position: absolute;
+	transition: opacity 1s;
+	background: url("../Images/check.svg") no-repeat;
+}
+
+input[type=checkbox]:checked + .label {
+	background-color: rgb(0, 255, 13, 0.75);
+}
+
+input[type=checkbox]:checked + .label::before {
+	opacity: 1;
+}
+
+/* Download */
+i {
+	padding: 2px;
+	font-size: 25px;
+	border-radius: 10px;
+	border: 0.7px solid grey;
+}
+
+i:hover {
+	color: white;
+	cursor: pointer;
+	transition: all 0.7s;
+	background: rgb(0, 255, 13, 0.75);
+}

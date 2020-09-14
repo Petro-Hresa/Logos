@@ -1,0 +1,114 @@
+body {
+	background: #b8bbb8;
+	font-family: Raavi, sans-serif;
+}
+
+#wrapper__networks {
+	display: flex;
+	height: 250px;
+	margin-top: 20%;
+	background-color: gold;
+
+	.networks {
+		@include networkBox();
+		background-color: #f2f2f2;
+		transition: $transition;
+		overflow: hidden;
+
+		&:hover {
+			width: 620px;
+		}
+
+		&__wrap {
+			position: relative;
+			@include networkBox();
+			float: left;
+			background-color: $bckNetwork;
+			overflow: hidden;
+
+			&__box_left {
+				left: 0;
+				@include networkBox();
+				position: absolute;
+				transition: $transition;
+				@include displayFlex ();
+				border-right:$borderBox;
+				border-left:$borderBox;
+			}
+
+			&__box_left svg {
+				width: 40px;
+				height: 40px;
+			}
+
+			&__box_right {
+				right: -100px;
+				@include networkBox();
+				position: absolute;
+				transition: $transition;
+				@include displayFlex()
+			}
+
+			&__box_right svg {
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		&:hover .left {
+			left: -100px;
+		}
+
+		&:hover .right {
+			right: 0;
+		}
+
+		&__content {
+			width: 500px;
+			font-size: 16px;
+			margin: 65px 10px 0 100px;
+			line-height: 1.4;
+			padding: 10px;
+
+		}
+
+		&__content p {
+			margin: 0;
+		}
+
+		&__title {
+			font-size: 40px;
+		}
+
+		&__box_right-twitter {
+			background: #1E90FF;
+		}
+
+		&__box_right-facebook {
+			background: #0e5cff;
+		}
+
+		&__box_right-linkedIn {
+			background: #70b7ff;
+		}
+
+		&__box_right-instagram {
+			background: linear-gradient(gold, #ff7018, red, #ff4c4d);
+		}
+
+		&__box_right-youTube {
+			background: red;
+		}
+
+		&__box_right-tumblr {
+			background: #2d2d5a;
+		}
+
+		&__box_right-dribbble {
+			background: #ff287d;
+		}
+
+	}
+
+
+}

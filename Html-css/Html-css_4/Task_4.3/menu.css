@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Verdana', sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+}
+
+ul > li {
+	position: relative;
+	width: 100px;
+	margin: 10px;
+	padding: 5px;
+	background-color: black;
+	text-align: center;
+	border-radius: 3px;
+	display: inline-block;
+	transition: .3s;
+}
+
+ul > li:hover {
+	border-radius: 10px 0 10px 0;
+	box-shadow: 0 0 0 2px red;
+}
+
+ul > li > a {
+	color: gold;
+	text-decoration: none;
+}
+
+ul > li > a:hover {
+	color: red;
+}

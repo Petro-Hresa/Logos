@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	font-family: 'Neuton', serif;
+}
+
+.block-arsenal {
+	display: flex;
+}
+
+.block-vertical {
+	color: white;
+	height: 500px;
+	font-size: 70px;
+	margin: 15% auto;
+	font-weight: bold;
+	text-align: center;
+	line-height: 480px;
+	width: 14.2857142857%;
+	border-top: 1px solid black;
+	text-shadow: 2px 2px 4px rgb(24, 23, 23);
+}
+
+.block-1 {
+	background: linear-gradient(rgb(248, 75, 75), rgb(131, 23, 23))
+}
+
+.block-2 {
+	background: linear-gradient(rgb(77, 81, 119), rgb(170, 44, 219))
+}
+
+.block-3 {
+	background: linear-gradient(rgb(62, 216, 152), rgb(230, 128, 44))
+}
+
+.block-4 {
+	background: linear-gradient(rgb(141, 99, 64), rgb(59, 126, 81))
+}
+
+.block-5 {
+	background: linear-gradient(rgb(223, 54, 90), rgb(216, 241, 103))
+}
+
+.block-6 {
+	background: linear-gradient(rgb(248, 75, 75), rgb(131, 23, 23))
+}
+
+.block-7 {
+	background: linear-gradient(rgb(139, 72, 10), rgb(172, 144, 84))
+}

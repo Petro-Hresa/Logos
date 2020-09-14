@@ -1,0 +1,328 @@
+body {
+	margin: 0;
+}
+
+/* Head */
+header {
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(rgb(245, 198, 68), red);
+	overflow: hidden;
+}
+
+.head,
+.clearfix {
+	overflow: hidden;
+}
+
+.head {
+	width: 80%;
+	height: 100px;
+	background: linear-gradient(40deg, rgb(199, 250, 17), rgb(47, 219, 99), rgb(23, 195, 218));
+	margin: 50px auto;
+}
+
+.clearfix {
+	width: 50%;
+	height: 50px;
+	background: gold;
+	margin: 25px auto;
+	text-align: center;
+	line-height: 15px;
+	font-size: 18px;
+}
+
+/*Navigation */
+.nav {
+	width: 20%;
+	height: 100px;
+	float: left;
+	text-align: center;
+}
+
+.menu1 {
+	background: linear-gradient(red, blue);
+}
+
+.menu2 {
+	background: red;
+}
+
+.menu3 {
+	background: gold;
+}
+
+.menu4 {
+	background: red;
+}
+
+.menu5 {
+	background: linear-gradient(red, blue);
+}
+
+/* Main */
+main {
+	font-size: 20px;
+	text-align: center;
+}
+
+/* Main left box */
+#Left-block {
+	background: green;
+}
+
+.text {
+	width: 70%;
+	height: 100px;
+	line-height: 50px;
+	background: rgb(162, 223, 204);
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+.block3 {
+	width: 50%;
+	height: 100px;
+	background: goldenrod;
+	margin: auto;
+	margin-top: 40px;
+}
+
+/* ======================================= */
+
+.block4,
+.block5 {
+	width: 25%;
+	height: 50%;
+	overflow: hidden;
+}
+
+.block4 {
+	background: rgb(214, 164, 164);
+	margin-left: 25%;
+	float: left;
+}
+
+.block5 {
+	background: rgb(207, 88, 88);
+	padding: 0 auto 0 0;
+	float: left;
+}
+
+/*====================================== */
+/* Main center box */
+.A {
+	width: 100%;
+	height: 50px;
+	background: red;
+	clear: both;
+}
+
+.B,
+.B2,
+.B1 {
+	overflow: hidden;
+}
+
+.B {
+	width: 33.3333333%;
+	height: 90%;
+	background: rgb(129, 236, 255);
+	float: left;
+}
+
+.B1 {
+	width: 50%;
+	height: 350px;
+	background: rgb(243, 97, 13);
+	margin-top: 100px;
+	float: left;
+}
+
+.B2 {
+	width: 50%;
+	height: 200px;
+	background: rgb(248, 156, 17);
+	margin-top: 227px;
+	float: right;
+}
+
+/* ========================================= */
+
+.C1,
+.D,
+.C2,
+.D1,
+.C3 {
+	width: 33.3333333%;
+	height: 20%;
+	overflow: hidden;
+	float: left;
+}
+
+.C1 {
+	background: rgb(226, 156, 50);
+	float: left;
+}
+
+.D {
+	background: rgb(46, 151, 211);
+}
+
+.C2 {
+	background: rgb(141, 113, 22);
+	float: left;
+}
+
+.D1 {
+	background: rgb(112, 185, 214);
+}
+
+.C3 {
+	background: rgb(112, 75, 75);
+	float: left;
+}
+
+/* ============================================= */
+
+.D3 {
+	width: 33.3333333%;
+	height: 50%;
+	background-image: url(../images/frame.png) ;
+	background-size: 100% 100%;
+	overflow: hidden;
+	float: right;
+}
+
+img {
+	width: 20px;
+	padding: 20px;
+}
+
+/*================================================ */
+
+.C4,
+.C5 {
+	width: 16.6666666%;
+	height: 30%;
+	overflow: hidden;
+	float: left;
+}
+
+.C4 {
+	background: rgb(229, 243, 40);
+}
+
+.C5 {
+	background: rgb(152, 224, 35);
+}
+
+
+/*Main right box */
+
+.main {
+	width: 33.33%;
+	height: 500px;
+	float: left;
+}
+
+.block-I,
+.block-II,
+.block-III {
+	width: 33.3333333%;
+	height: 50px;
+	float: left;
+}
+
+.block-I {
+	background: rgb(219, 153, 30);
+}
+
+.block-II {
+	background: rgb(119, 212, 32);
+}
+
+.block-III {
+	background: rgb(62, 155, 135);
+}
+
+/* ========================================== */
+
+.block-IV,
+.block-VI {
+	width: 100%;
+	height: 100px;
+}
+
+.block-IV {
+	background: rgb(253, 241, 217);
+	overflow: hidden;
+}
+
+.block-V {
+	width: 30%;
+	height: 30px;
+	background: red;
+	margin: 35px auto;
+	overflow: hidden;
+}
+
+.block-black {
+	width: 10px;
+	height: 5px;
+	background: black;
+	margin: 25px auto;
+}
+
+.block-VI {
+	background: rgb(255, 197, 82);
+}
+
+/* ========================================== */
+
+.vertica_l,
+.min-block_1,
+.min-block_2,
+.horizontal_2 {
+	float: left;
+}
+
+.vertica_l {
+	width: 30%;
+	height: 250px;
+	background: rgb(32, 119, 32);
+}
+
+.horizontal_1 {
+	width: 100%;
+	height: 75px;
+	background: gray;
+}
+
+.min-block_1 {
+	width: 35%;
+	height: 100px;
+	background: fuchsia;
+}
+
+.min-block_2 {
+	width: 35%;
+	height: 100px;
+	background: greenyellow;
+}
+
+.horizontal_2 {
+	width: 70%;
+	height: 75px;
+	background: rgb(240, 79, 79);
+}
+
+
+/* footer */
+footer {
+	width: 100%;
+	height: 121px;
+	background: grey;
+	clear: both;
+	text-align: center;
+}

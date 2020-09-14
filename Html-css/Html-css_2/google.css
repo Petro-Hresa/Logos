@@ -1,0 +1,266 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: rgb(253, 253, 244);
+	font-family: sans-serif;
+}
+
+/* Header */
+header {
+    padding: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+header a {
+	margin: 0 10px;
+	text-decoration: none;
+	font-size: 16px;
+	color: rgb(116, 113, 113);
+	transition: color .5s cubic-bezier(0, 1.06, .63, .98) .2s;
+}
+.text a:hover {
+	color: black;
+	text-decoration-line: underline;
+}
+.email a img {
+	width: 40px;
+    transition: .4s cubic-bezier(.25, 1.95, .51, .73) .2s;
+}
+a img:hover {
+	transform: scale(1.1);
+}
+
+
+/* GOOGLE */
+.google {
+	display: flex;
+	justify-content: center;
+	padding-top: 11%;
+	padding-bottom: 2%;
+}
+.google li {
+	font-size: 90px;
+	font-weight: bold;
+	display: inline-block;
+	align-items: center;
+	font-family: 'Hind Madurai', sans-serif;
+	animation: google 1.5s;
+}
+
+.G {
+	color: blue;
+}
+
+.o1 {
+	color: red;
+}
+
+.o2 {
+	color: gold;
+}
+
+.g {
+	color: blue;
+}
+
+.l {
+	color: green;
+}
+
+.e {
+	color: red;
+	transform: rotate(-20deg);
+
+}
+
+@keyframes google {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Enter */
+
+section {
+	display: flex;
+	justify-content: center;
+}
+
+.block-enter {
+	width: 600px;
+	background: #ebebda;
+	margin: 0 20px;
+	display: flex;
+	justify-content: center;
+	border-radius: 30px;
+	box-shadow: 1px 1px 4px 1px rgb(156, 156, 156, 1.5);
+}
+
+.enter {
+	width: 68%;
+	height: 35px;
+	font-size: 15px;
+	outline: none;
+	background: #ebebda;
+	letter-spacing: 1px;
+	border: none;
+}
+
+.icons8 {
+	width: 18px;
+	height: 18px;
+	margin-right: 2%;
+	margin-top: 9px;
+}
+
+
+/*Menu */
+.items {
+	margin: 2%;
+}
+
+.icons9 {
+	width: 50px;
+	padding: 20px;
+	transition: background 0.2s;
+	border-radius: 10px;
+}
+
+.icons9:hover {
+	background: rgb(151, 150, 150, 0.15);
+}
+
+
+/*Media*/
+@media screen and (max-width: 560px) {
+	body {
+		background: rgb(27, 26, 26);
+	}
+
+	div a {
+		font-weight: bold;
+		color: rgb(165, 67, 67);
+	}
+
+	.text a {
+		font-size: 14px;
+	}
+
+	.text a:hover {
+		color: rgb(86, 104, 121);
+	}
+
+
+	.block-enter {
+		width: 80%;
+		overflow: hidden;
+	}
+
+	.enter {
+		flex-basis: 77%;
+		height: 30px;
+		overflow: hidden;
+		font-size: 70%;
+	}
+
+	.google li {
+		font-size: 50px;
+		right: 30px;
+	}
+
+	.icons8 {
+		width: 18px;
+		height: 18px;
+		margin-top: 9px;
+	}
+
+	.icons9 {
+		width: 40px;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.block-enter {
+		width: 80%;
+		flex-wrap: wrap;
+	}
+
+	.enter {
+		flex-basis: 80%;
+		font-size: 10px;
+	}
+
+	.google li {
+		font-size: 30px;
+		right: 30px;
+	}
+
+	.icons8 {
+		width: 12px;
+		height: 12px;
+		margin-right: 5px;
+		margin-top: 9px;
+	}
+
+	.icons9 {
+		width: 30px;
+		padding: 5px 20px;
+	}
+
+	.items {
+		margin: 0 100px;
+		padding-left: 15px
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.block-enter {
+		width: 100%;
+	}
+
+	.enter {
+		width: 157%;
+		margin-left: 2%;
+		overflow: hidden;
+		font-size: 9px;
+	}
+
+	.icons8 {
+		width: 10px;
+		height: 10px;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.items {
+		margin: 0 90px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.enter {
+		font-size: 9px;
+		overflow: hidden;
+	}
+
+	.icons8 {
+		width: 9px;
+		height: 9px;
+		margin-left: 5px;
+		margin-top: 10px;
+	}
+
+	.items {
+		margin: 0 70px;
+	}
+}
+
+

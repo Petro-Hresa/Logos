@@ -1,0 +1,51 @@
+
+.container{
+	width: 65%;
+}
+/*Background Grid*/
+#grid{
+	display: flex;
+	justify-content: space-between;
+	z-index: -10;
+}
+#grid > div{
+	height: 100%;
+	background-color: #f3edf6;
+}
+
+/*Links*/
+* a.nav-link {
+	font-size: small;
+	padding: 5px;
+	color:grey;
+	transition: font-weight .3s;
+}
+* a.nav-link:hover{
+	color: #626262;
+	font-weight: bold;
+}
+
+/*Header Title */
+h1.text-white{
+	font-size: 50px;
+}
+
+/*Site bar*/
+input.form-control{
+	background-color: rgba(0,0,0,0);
+}
+
+/*section Introduction p*/
+p.font-weight-bolder{
+	font-size: 14px;
+}
+
+/*Section Btn*/
+button.btn{
+	border-radius: 5px;
+	text-transform: none;
+}
+#btn__outline{
+	color:purple;
+	border: 2px solid purple !important;
+}
