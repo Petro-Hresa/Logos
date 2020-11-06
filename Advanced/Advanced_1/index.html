@@ -9,6 +9,15 @@
 	
 	<script type="text/javascript">
 		
+function  CoffeeMace(){};
+CoffeeMace.prototype.on = function(){console.log('on')};
+CoffeeMace.prototype.off = function(){console.log('off')};
+
+let drip = new CoffeeMace();
+console.log(drip)
+
+drip.on()
+drip.off()
 
 
 	</script>
