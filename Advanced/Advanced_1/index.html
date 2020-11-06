@@ -8,26 +8,64 @@
 <body>
 	
 	<script type="text/javascript">
-<<<<<<< HEAD
-		
-=======
 
-
->>>>>>> b999e6b833215dc8f5f41fd03270454a2242dbe5
 function  CoffeeMace(){};
 CoffeeMace.prototype.on = function(){console.log('on')};
 CoffeeMace.prototype.off = function(){console.log('off')};
 
-let drip = new CoffeeMace();
-console.log(drip)
-
-drip.on()
-drip.off()
-<<<<<<< HEAD
-=======
+console.log(CoffeeMace.prototype)
 
 
->>>>>>> b999e6b833215dc8f5f41fd03270454a2242dbe5
+
+// let CoffeeMaceDrip = new CoffeeMace();
+
+
+function CoffeeMaceDrip(){}
+
+    CoffeeMaceDrip.prototype.addSugar = function(){
+    	console.log('Add 50g sugar')
+    };
+console.log(CoffeeMaceDrip.prototype)
+// coffeeMaceDrip.on()
+// coffeeMaceDrip.off()
+CoffeeMaceDrip.__proto__ = CoffeeMace
+
+CoffeeMaceDrip.on()
+// console.log(coffeeMaceDrip.prototype)
+
+
+
+// drip.prototype.underPressure = function(){
+// 	console.log("Under Pressure")
+// }
+
+
+// drip.on()
+// drip.off()
+// drip.underPressure()
+
+
+ // function Man(name , city){
+ // 	this.name = name;
+ // 	this.location = city;
+ 	// this.say =function(){
+ 	// 	alert('May name is ' + this.name);
+ 	// }
+ // }
+
+//  Man.prototype.say = function(){
+//  		alert('May name is ' + this.name);
+//  	};
+
+// let petro = new Man('Petro', 'Lviv');
+// let clavik = new Man('Clavik','Kyev');
+
+
+// petro.say()
+// clavik.say()
+
+
+
 
 
 	</script>
