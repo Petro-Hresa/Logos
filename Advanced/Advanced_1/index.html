@@ -9,61 +9,106 @@
 	
 	<script type="text/javascript">
 
-function  CoffeeMace(){};
-CoffeeMace.prototype.on = function(){console.log('on')};
-CoffeeMace.prototype.off = function(){console.log('off')};
-
-console.log(CoffeeMace.prototype)
 
 
 
-// let CoffeeMaceDrip = new CoffeeMace();
+
+let CoffeeMace = {
+	this:'CoffeeMace',
+};
+
+	Object.prototype.on = function(){console.log('on')},
+    Object.prototype.off = function(){console.log('off')}
 
 
-function CoffeeMaceDrip(){}
+CoffeeMace.on()
 
-    CoffeeMaceDrip.prototype.addSugar = function(){
-    	console.log('Add 50g sugar')
-    };
-console.log(CoffeeMaceDrip.prototype)
+let CoffeeMaceDrip = {};
+
+console.log(CoffeeMaceDrip)
+CoffeeMaceDrip.on()
+CoffeeMaceDrip.off()
+
+
+// function CoffeeMaceDrip(){}
+
+//     CoffeeMaceDrip.prototype.addSugar = function(){
+//     	console.log('Add 50g sugar')
+//     };
+
+
+
+// console.log(CoffeeMaceDrip.prototype)
 // coffeeMaceDrip.on()
 // coffeeMaceDrip.off()
-CoffeeMaceDrip.__proto__ = CoffeeMace
+// CoffeeMaceDrip.__proto__ = CoffeeMace
 
-CoffeeMaceDrip.on()
-// console.log(coffeeMaceDrip.prototype)
+// CoffeeMaceDrip.on()
 
+// let user = {
+// 	username:'Petro',
+// 	_password:'',
 
-
-// drip.prototype.underPressure = function(){
-// 	console.log("Under Pressure")
+// 	set password(pass){
+// 		this._password = pass.trim()
+// 	},
+// 	get password (){
+// 		return this._password
+// 	}
 // }
 
 
-// drip.on()
-// drip.off()
-// drip.underPressure()
+// user.password = ' hello '
+
+// let user2 ={};
+// user2.__proto__=user;
+
+// console.log(user)
+// let user2 = {
+// 	username:'Petro',
+// 	password:'111'
+// }
 
 
- // function Man(name , city){
- // 	this.name = name;
- // 	this.location = city;
- 	// this.say =function(){
- 	// 	alert('May name is ' + this.name);
- 	// }
- // }
 
-//  Man.prototype.say = function(){
-//  		alert('May name is ' + this.name);
-//  	};
+// let user2 = {} ;
+// user2.__proto__ = user;
 
-// let petro = new Man('Petro', 'Lviv');
-// let clavik = new Man('Clavik','Kyev');
+// user.photo = "jpg"
+
+// // console.log(user)
+// console.log(user2)
+// console.log(user2.username)
+
+let user ={
+	name:"Petro",
+	age: 18,
+
+}
 
 
-// petro.say()
-// clavik.say()
 
+
+let user2 = {
+	age:25,
+	__proto__:user,
+}
+
+// user2.wath()
+
+let user3 = {
+		country:"Sweden",
+	__proto__:user2,
+}
+
+// user.wath()
+
+console.log(user)
+
+// console.log(user)
+// console.log(user2)
+// console.log(user2.name = "Ivan")
+// console.log(user2.__proto__.age)
 
 
 
