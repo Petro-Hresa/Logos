@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="text/html">
+	<!--links-->
+	<link href="css/style.css" rel="stylesheet" >
+</head>
+<body>
+     <form class="block" name='products'>
+		 <div class="block__item">
+			 <p class="block__name">Баланс</p>
+			 <input type="text" class="block__enter" name="balance" value="1000">
+		 </div>
+		 <div class="block__item">
+			 <p class="block__name">Пиво</p>
+			 <input type="text" class="block__enter" name="Beer" value="80">
+		 </div>
+		 <div class="block__item">
+			 <p class="block__name">Вино</p>
+			 <input type="text" class="block__enter" name="Vine" value="70">
+		 </div>
+		 <div class="block__item">
+			 <p class="block__name">Пепсі</p>
+			 <input type="text" class="block__enter" name="Pepsi" value="100">
+		 </div>
+	 </form>
+	 <!-------------------------------------->
+	 <form class="block" name='payProduct'>
+
+		<div class="block__item">
+			<p class="block__name">Кількість</p>
+			<input type="number" class="block__number" name='number'>
+		</div>	
+
+		<div class="block__item" id="w">
+	        <input type="radio" class="block__radio" name='productAdd' value="Beer">Пиво
+			<input type="radio" class="block__radio" name='productAdd' value="Vine">Вино
+			<input type="radio" class="block__radio" name='productAdd' value="Pepsi">Пепсі
+			<input type="button" class="block__add" name='btnAdd' value="Додати"> 
+		</div>
+
+        <div class="block__item">
+			<ul class="list__products"></ul>
+
+			<input type="button" class="block__buy" name='buy' value="Купити">
+		</div>
+
+	 </form>
+
+	 <ul class="block block__views">											
+	 </ul>
+
+
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
