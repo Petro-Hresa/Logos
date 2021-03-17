@@ -2,34 +2,67 @@ const querySell = x => document.querySelector(x);
 
 // Function creat Products value
 
+
 (function Products(){
        
-    const PRODUCTSvalue = document.forms['products'];
-    const PRODUCTSadd = document.forms['payProduct'];
+    const PRODUCTSBalance = document.forms['ProductsBalance'];
+    const PAYProducts = document.forms['payProduct'];
 
-    function LoopProductsValue(){
+    
 
-        for(let i = 0; i < PRODUCTSvalue.length; i++ ){
+
+
+
+    // function AvailabilityProducts(i = 0){
+
+    //     for( ;i < PRODUCTSBalance.length; i++ ){
               
-            let sliceProductsValue =  PRODUCTSvalue[i].value.slice(0, `${PRODUCTSvalue[i].value.lastIndexOf(' ')}`);
+          
+    //     };
+    // };
+    
+    
+    {
+        AvailabilityProducts(i)
+        let sliceProductsValue =  PRODUCTSBalance[i].value.slice(0, `${PRODUCTSBalance[i].value.lastIndexOf(' ')}`);
+        
+        if(sliceProductsValue <= 0){
+            alert("Dosen't have product")
+        }
+        
+    }
+    
+
+
+
+
+
+
+
+    // function AvailabilityProducts(){
+
+    //     for(let i = 0; i < PRODUCTSBalance.length; i++ ){
+              
+    //         let sliceProductsValue =  PRODUCTSBalance[i].value.slice(0, `${PRODUCTSBalance[i].value.lastIndexOf(' ')}`);
        
-            if(sliceProductsValue <= 0){
-                alert("Dosen't have product")
-            }
-        };
-    };
+    //         if(sliceProductsValue <= 0){
+    //             alert("Dosen't have product")
+    //         }
+    //     };
+    // };
 
   
     
     
-    PRODUCTSadd.btnAdd.onclick = function(){
+    PAYProducts.btnAdd.onclick = function(){
 
-        let PRODUCTSaddNumber = PRODUCTSadd.number;
-        PRODUCTSadd.productAdd.forEach(product =>{
+        let addNumberProduct = PAYProducts.number;
+        PAYProducts.productAdd.forEach(product =>{
 
             if(product.checked ){
-                LoopProductsValue()
-                creatList(product, PRODUCTSaddNumber)
+
+                AvailabilityProducts()
+                creatList(product, addNumberProduct)
               
             }
         })
@@ -39,14 +72,13 @@ const querySell = x => document.querySelector(x);
 })();
 
 
-function creatList(product, PRODUCTSaddNumber){
+function creatList(product, addNumberProduct){
 
+    const creatListProducts = document.createElement("li");
 
+    if(addNumberProduct.value != '' && product.checked){
 
-    if(PRODUCTSaddNumber.value != '' && product.checked){
-
-       const creatListProducts = document.createElement("li");
-       creatListProducts.innerText = `${product.value}: ${PRODUCTSaddNumber.value} шт`;
+       creatListProducts.innerText = `${product.value}: ${addNumberProduct.value} шт`;
        querySell('.list__products').appendChild(creatListProducts)
     //    console.log(creatListProducts)
 
