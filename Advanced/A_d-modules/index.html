@@ -9,7 +9,7 @@
 	<link href="css/style.css" rel="stylesheet" >
 </head>
 <body>
-     <form class="block" name='ProductsBalance'>
+     <form class="block" name='productsBalance'>
 		 <div class="block__item">
 			 <p class="block__name">Баланс</p>
 			 <input type="text" class="block__enter" name="balance" value="1000 грн">
@@ -28,7 +28,7 @@
 		 </div>
 	 </form>
 	 <!-------------------------------------->
-	 <form class="block" name='payProduct'>
+	 <form class="block block_error" name='productBuy'>
 
 		<div class="block__item">
 			<p class="block__name">Кількість</p>
@@ -36,21 +36,21 @@
 		</div>	
 
 		<div class="block__item" id="w">
-	        <input type="radio" class="block__radio" name='productAdd' value="Beer">Пиво
-			<input type="radio" class="block__radio" name='productAdd' value="Vine">Вино
-			<input type="radio" class="block__radio" name='productAdd' value="Pepsi">Пепсі
-			<input type="button" class="block__add" name='btnAdd' value="Додати"> 
+	        <input type="radio" class="block__radio" name='productSelect' value="Beer">Пиво
+			<input type="radio" class="block__radio" name='productSelect' value="Vine">Вино
+			<input type="radio" class="block__radio" name='productSelect' value="Pepsi">Пепсі
+			<input type="button" class="block__add" name='buttonAdd' value="Додати"> 
 		</div>
 
         <div class="block__item">
 			<ul class="list__products"></ul>
 
-			<input type="button" class="block__buy" name='buy' value="Купити">
+			<input type="button" class="block__buy" name='buttonBuy' value="Купити">
 		</div>
 
 	 </form>
 
-	 <ul class="block block__views">											
+	 <ul class="block block__purchase">											
 	 </ul>
 
 
