@@ -1,0 +1,67 @@
+.contacts {
+	height: 54px;
+	display: flex;
+	justify-content:flex-end;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.31);
+
+
+	/* .contacts__first */
+	&__first {
+		font-size: 16px;
+		letter-spacing: -1.5%;
+		color:$colorText;
+		font-weight: 500;
+		margin-right:46px;
+		cursor:pointer;
+
+		
+	}
+	/* .contacts__second */
+	&__second {
+		@extend .contacts__first;
+
+	}
+	/* .contacts__networks */
+	&__networks {
+		padding: 0 64px;
+		margin: 6px 15px 0 0;
+	}
+	/* .contacts__linkedin */
+	&__linkedin {
+		margin: 0 11px;
+		cursor:pointer;
+	}
+	/* .contacts__facebook */
+	&__facebook {
+		 @extend .contacts__linkedin;
+	}
+	/* .contacts__instagram */
+	&__instagram {
+		 @extend .contacts__linkedin;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.contacts{
+		height: auto;
+		padding: 0 15px;
+    flex-direction:column-reverse;
+      &__wrap-numers{
+      	width: 100%;
+      	display: flex;
+      	justify-content: space-between;
+      	
+      }
+      	&__first{
+      		margin: 0;
+      	}
+
+      	&__networks {
+      		margin-bottom: 10px;
+      	}
+
+
+	}
+}

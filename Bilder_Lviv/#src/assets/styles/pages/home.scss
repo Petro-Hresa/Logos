@@ -1,0 +1,64 @@
+@import "blocks/_main/_about";
+@import "blocks/_main/_stages";
+@import "blocks/_main/_portfolio";
+@import "blocks/_main/_response";
+@import "blocks/_main/_conection";
+
+body{
+ max-width: 1440px;
+ margin: 0 auto;
+ box-sizing: border-box;
+ font-family: "Gilroy", sans-serif;
+
+
+}
+
+.container-fluid{
+	padding: 0;
+}
+
+
+.hidden{
+	overflow: hidden;
+}
+
+
+.btn{
+	font-size: 16px;
+	letter-spacing: -1.5%;
+   font-style: normal;
+   display: inline-block;
+   cursor:pointer;
+}
+
+
+.title{
+
+	font-family: PlayfairDisplay-Regular , sans-sarif;
+   font-size: calc(22px + 16 * calc(100vw / 1440)); ;
+   font-weight: 400;
+   letter-spacing: 0.2px;
+}
+
+
+.text{
+	font-size: 18px;
+	letter-spacing: 0.2px;
+	font-weight: normal;
+	line-height: 25.09px;
+	@media screen and(max-width: 768px) {
+			font-size: 16px;
+	}
+}
+
+
+.upper-title {
+	font-size: 18px;
+	list-style: 25px;
+	letter-spacing: 9.7px;
+	color:$colorBtn;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+

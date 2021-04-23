@@ -1,0 +1,72 @@
+.conection {
+	background-color: $backgroundBtn;
+	color:$colorText;
+	border: 1px solid $backgroundBtn;
+	
+	/* .conection__inner */
+	&__inner {
+		width: 705px;
+		margin: 0 auto;
+	}
+
+
+	/* .conection__title */
+	&__title {
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 40px;
+		margin: 45px 0 7px 0;
+	}
+
+
+	/* .conection__form */
+	&__form {
+		padding: 42px 0;
+	}
+
+
+	&__input{
+		width: 304px;
+		border:none;
+		background-color: transparent;
+		border-bottom: 0.5px solid #FFFFFF;
+		outline: none;
+		margin-bottom: 42px;
+	}
+
+
+	/* .conection__wrap */
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	/* .conection__message */
+	&__message {
+		width: 100%;
+		@extend 	.conection__input;
+	}
+
+
+	&__button{
+		background-color: #FFFFFF;
+		font-size: 16px;
+		line-height: 20px;
+		border:none;
+		color:$colorBtn;
+		padding: 0.6em 1em;
+
+	}
+}
+
+
+.pconection {
+	/* .pconection__subtitle */
+	&__subtitle {
+		margin: 0 ;
+		font-size: 18px;
+		line-height: 21px;
+		letter-spacing: 0.005em;
+	}
+}

@@ -1,0 +1,90 @@
+.stages {
+	background: #000000;
+	padding: 65px 167px;
+
+
+	/* .stages__work */
+	&__work {
+	}
+
+
+	/* .stages__title */
+	&__title {
+		color:$colorText;
+	}
+
+
+	/* .stages__box */
+	&__box {
+		display: flex;
+
+		@media screen and(max-width: 1200px) {
+			flex-direction:column;
+		}
+	}
+
+
+	&__box-left{
+      display: flex;
+	}
+
+
+	&__box-right{
+      @extend .stages__box-left;
+	   &:last-child>:last-child >:first-child{
+	      line-height: 55px;
+	   }
+
+      &:last-child>:last-child >:first-child:after{
+	      content:'';
+	    	width: 0%;
+      }
+	}
+
+
+	/* .stages__phase */
+	&__phase {
+
+	}
+
+
+	/* .stages__number */
+	&__number {
+
+		font-size: 40px;
+		color:$colorText;
+		width: 66px;
+		height: 66px;
+		text-align: center;
+		line-height: 45px;
+		border: 1px solid $colorText;
+		display: inline-block;
+		border-radius: 50%;
+		font-family: PlayfairDisplay-Regular , sans-sarif;
+		margin: 26px;
+		position: relative;
+		background-color: black;
+       
+       
+		 &:after{
+		 	content: '';
+		 	position: absolute;
+		 	left: 100%;
+		 	top: 49%;
+		 	width: 190%;
+		 	height: 1px;
+		 	background-color: #fff;
+		 }
+
+	}
+
+ 
+	/* .stages__text */
+	&__text {
+			color:$colorText;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.2px;
+			padding: 0 10px;
+	}
+}
