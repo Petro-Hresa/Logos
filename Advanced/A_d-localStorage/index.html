@@ -13,29 +13,37 @@
 <body>
 
     <form class="sign sign-up" name="sign-up">
-          <h2>Please sign up</h2>         
+        <h2>Please sign up</h2>   
 
-          <input type="text" class="enter-data mb-3 form-control"  placeholder="First name" name="firstName">
+        <div class="wrap-input">
+          <input type="text" class="input-field error-enter  form-control"  placeholder="First name" name="firstName">
+        </div>
 
-          <input type="text" class="enter-data mb-3 form-control"   placeholder="Last name"  name="lastName">
+        <div class="wrap-input">
+            <input type="text" class="input-field error-enter  form-control"   placeholder="Last name"  name="lastName">
+        </div>
 
-          <input type="email" class="enter-data mb-3 form-control"  placeholder="Email address"  name="email">
+        <div class="wrap-input">
+          <input type="email" class="input-field error-enter  form-control"  placeholder="Email address"  name="email">
+        </div>
 
-          <input type="password" class="enter-data mb-3 form-control" placeholder="Password"  name="password">
+        <div class="wrap-input">
+          <input type="password" class="input-field error-enter form-control" placeholder="Password"  name="password">
+        </div>
 
-          <button type="submit" id="button-signUp" class="btn btn-primary w-100">Sigin Up</button>
+        <button type="submit" id="button-signUp" class="btn btn-primary w-100">Sigin Up</button>
 
-          <a href="#" id="sigin-in-now" class="mt-1 text-primary sigin-now ">Sign in now</a>
+        <a href="#" id="sigin-in-now" class="mt-1 text-primary sigin-now ">Sign in now</a>
        
       </form>
 
       <form class="sign sign-in" name="sign-in">
         <h2>Please sign in</h2>         
 
-        <input type="email" class="mb-4 form-control"  placeholder="Email address" name="email">
+        <input type="email" class="input-up form-control"  placeholder="Email address" name="email">
 
-        <input type="password" class="mb-4 form-control"  placeholder="Password" name="password">
-        <div class="error"></div>
+        <input type="password" class="input-up form-control"  placeholder="Password" name="password">
+     
         <button type="submit" id="button-signIn" class="btn btn-success w-100">Sigin In</button>
 
         <a href="#" id="sigin-up-now" class="mt-1 text-primary sigin-now">Sign up now</a>
